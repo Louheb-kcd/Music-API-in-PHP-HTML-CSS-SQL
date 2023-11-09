@@ -1,0 +1,39 @@
+
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .music-details {
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 10px;
+            box-shadow: 9px 9px 30px #CCCCCC;
+            margin: 50px auto;
+            padding: 20px;
+            width: 700px;
+            margin-left: 200px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .music-details b {
+            color: #333333;
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 20px;
+            text-transform: uppercase;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .music-details u {
+            color: #14325f;
+            font-size: 24px;
+        }
+
+

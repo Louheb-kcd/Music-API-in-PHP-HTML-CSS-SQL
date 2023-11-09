@@ -1,0 +1,62 @@
+<?php
+  $corps =<<<EOT
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Mon formulaire</title>
+        <link rel="stylesheet" href="style/style.css">
+      </head>
+      <form method="post" action="index.php?action={$cible}&idM={$idM}" name="form_user" >
+        <section>
+          <label>Titre</label>
+          <input type="text" name="titre" size="" value="{$titre}">
+          <span class="w3-text-red">{$erreur["titre"]}</span><br>
+        </section>
+
+        <section>
+          <label>Artiste</label>
+          <input type="text" name="artiste" size="" value="{$artiste}">
+          <span class="w3-text-red">{$erreur["artiste"]}</span><br>
+        </section>
+
+        <section>
+          <label for="genre">Genre</label>
+          <select id="genre" name="genre">
+            <option value="francais">Français</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="hip-hop">Hip-hop</option>
+            <option value="chaabi">Chaabi</option>
+            <option value="rap">Rap</option>
+            <option value="kabyle">Kabyle</option>
+            <option value="drill">Sentimental</option>
+            <option value="drill">Accapela</option>
+            <option value="drill">Autre</option>
+          </select>
+        </section>
+        
+        <section>  
+          <label>Date de sortie</label>
+          <input type="date" name="dateSortie" size="" value="{$dateSortie}">
+          <span class="w3-text-red">{$erreur["dateSortie"]}</span><br><br>
+        </section>
+
+        <section>
+          <label>Langue</label>
+          <input type="text" name="langue" size="" value="{$langue}">
+          <span class="w3-text-red">{$erreur["langue"]}</span><br>
+        </section>
+
+        <section>
+          <label>Commentaire</label>
+          <textarea rows="4" cols="30" name="commentaire" value="{$commentaire}"></textarea>
+          <span class="w3-text-red">{$erreur["commentaire"]}</span><br>
+        </section>
+        
+        <input type="submit" name="user_valider" value="Valider" size="" >
+        
+      </form>
+
+    EOT;
+  $zonePrincipale=$corps;
+?>
